@@ -305,6 +305,8 @@ module.exports = (opts = {}) => {
   let preserveEmpty = opts.preserveEmpty
 
   return {
+    postcssPlugin: 'postcss-nested',
+
     Once(root) {
       root.walkAtRules(rootRuleName, node => {
         normalizeRootRule(node)
@@ -379,4 +381,3 @@ module.exports = (opts = {}) => {
   }
 }
 module.exports.postcss = true
-module.exports.postcssPlugin = 'postcss-nested'
