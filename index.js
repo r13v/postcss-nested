@@ -379,3 +379,4 @@ module.exports = (opts = {}) => {
   }
 }
 module.exports.postcss = true
+module.exports.postcssPlugin = 'postcss-nested'
